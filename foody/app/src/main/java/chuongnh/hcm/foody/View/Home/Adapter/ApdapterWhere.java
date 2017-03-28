@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import chuongnh.hcm.foody.CodeHelper.EllipsizingTextView;
+
 import java.util.List;
 
 import chuongnh.hcm.foody.Model.ModelWhere;

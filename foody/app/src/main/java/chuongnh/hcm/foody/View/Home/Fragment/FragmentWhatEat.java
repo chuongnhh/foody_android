@@ -49,8 +49,8 @@ public class FragmentWhatEat extends Fragment {
         ModelWhatEat modelWhatEat = new ModelWhatEat(
                 "",
                 "Chả Bò Bánh Mì",
-                "Somtum Der - Món Ăn Thái",
-                "123 Pastuer, Quận 1", "", "chuongnh", "29/08/2017");
+                "Somtum Der - Món Ăn Thái - Món Ăn Thái",
+                "123 Pastuer, Quận 1", "", "Nguyễn Hoàng Chương", "29/08/2017");
 
         for (int i = 0; i < 100; i++) {
             modelWhatEatList.add(modelWhatEat);
