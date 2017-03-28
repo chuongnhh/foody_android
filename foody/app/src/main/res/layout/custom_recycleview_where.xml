@@ -21,7 +21,7 @@
             android:paddingBottom="10dp">
 
             <TextView
-                android:id="@+id/textViewRate"
+                android:id="@+id/textViewShopRate"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:text="7.8"
@@ -34,7 +34,7 @@
                 android:textColor="@color/white"/>
 
             <TextView
-                android:id="@+id/textViewWhereTitle"
+                android:id="@+id/textViewWhereShopName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="45dp"
@@ -46,10 +46,10 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textViewWhereAddress"
+                android:id="@+id/textViewWhereShopAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textViewWhereTitle"
+                android:layout_below="@+id/textViewWhereShopName"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="45dp"
                 android:layout_marginRight="5dp"
@@ -58,10 +58,10 @@
                 android:textSize="11sp" />
 
             <TextView
-                android:id="@+id/textViewWhereAddressKm"
+                android:id="@+id/textViewWhereShopKm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textViewWhereTitle"
+                android:layout_below="@+id/textViewWhereShopName"
                 android:layout_marginBottom="10dp"
                 android:layout_marginLeft="45dp"
                 android:layout_marginRight="5dp"
@@ -71,18 +71,18 @@
                 android:textSize="11sp" />
 
             <ImageView
-                android:id="@+id/imageViewWhere"
-                android:layout_below="@id/textViewRate"
+                android:id="@+id/imageViewWhereShopImage"
+                android:layout_below="@id/textViewShopRate"
                 android:layout_width="match_parent"
                 android:layout_height="190dp"
                 android:padding="0dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/food" />
             <Button
-                android:id="@+id/buttonOrder"
+                android:id="@+id/buttonShopOrder"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_below="@+id/imageViewWhere"
+                android:layout_below="@+id/imageViewWhereShopImage"
                 android:text="Đặt giao hàng"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
@@ -93,21 +93,21 @@
 
 
             <ImageView
-                android:id="@+id/imageViewIconUser1"
+                android:id="@+id/imageViewIconUserImage1"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_below="@+id/buttonOrder"
+                android:layout_below="@+id/buttonShopOrder"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/user"
+                android:src="@drawable/chuongnh"
                 android:background="@drawable/bg_custom_recycleview_where_imageview_user"/>
 
             <TextView
-                android:id="@+id/textViewUser1"
+                android:id="@+id/textViewUserComment1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/buttonOrder"
+                android:layout_below="@id/buttonShopOrder"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="7dp"
 
@@ -119,7 +119,7 @@
                 android:id="@+id/textViewUserRate1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/buttonOrder"
+                android:layout_below="@id/buttonShopOrder"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="7dp"
 
@@ -131,32 +131,32 @@
                 android:paddingEnd="5dp"/>
 
             <TextView
-                android:id="@+id/textViewComment1"
+                android:id="@+id/textViewCommentContent1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textViewUser1"
+                android:layout_below="@id/textViewUserComment1"
                 android:layout_marginLeft="40dp"
                 android:text="Mình rất thích món ăn ở đây, vừa ngon lại còn rẻ nữa."
                 android:textColor="@color/text_color"
                 android:textSize="12sp" />
 
             <ImageView
-                android:id="@+id/imageViewIconUser2"
+                android:id="@+id/imageViewIconUserImage2"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:layout_below="@+id/textViewComment1"
+                android:layout_below="@+id/textViewCommentContent1"
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/user"
+                android:src="@drawable/linhptt"
 
                 android:background="@drawable/bg_custom_recycleview_where_imageview_user"/>
 
             <TextView
-                android:id="@+id/textViewUser2"
+                android:id="@+id/textViewUserComment2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textViewComment1"
+                android:layout_below="@id/textViewCommentContent1"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="7dp"
 
@@ -168,7 +168,7 @@
                 android:id="@+id/textViewUserRate2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textViewComment1"
+                android:layout_below="@id/textViewCommentContent1"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="7dp"
 
@@ -180,7 +180,7 @@
                 android:paddingEnd="5dp"/>
 
             <TextView
-                android:id="@+id/textViewComment"
+                android:id="@+id/textViewCommentContent2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/textViewUserRate2"

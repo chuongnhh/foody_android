@@ -72,7 +72,7 @@
                 android:layout_height="25dp"
                 android:layout_below="@+id/recycleViewDivider"
                 android:layout_margin="5dp"
-                android:src="@drawable/user" />
+                android:src="@drawable/chuongnh" />
             <TextView
                 android:id="@+id/textViewWhatEatUserName"
                 android:layout_width="match_parent"

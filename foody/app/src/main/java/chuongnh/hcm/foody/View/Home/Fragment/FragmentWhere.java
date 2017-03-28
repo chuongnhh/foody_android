@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import chuongnh.hcm.foody.Model.ModelWhere;
 import chuongnh.hcm.foody.R;
 import chuongnh.hcm.foody.View.Home.Adapter.ApdapterWhere;
 
@@ -41,13 +42,31 @@ public class FragmentWhere extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_where, container, false);
         recyclerView = (RecyclerView) view.findViewById(R.id.recycleViewWhere);
-        List<String> stringList = new ArrayList<>();
+        List<ModelWhere> modelWhereList = new ArrayList<>();
+
+        ModelWhere modelWhere = new ModelWhere(
+                "Amore Coffee & Fresh Bread",
+                "10B Kỳ Đồng, P.9, Quận 3, TP. HCM",
+                "9.0",
+                "13305.9km",
+                "",
+
+                "",
+                "Nguyen Hoang Chuong",
+                "Mình rất thích món ăn ở đây, vừa ngon lại còn rẻ nữa.",
+                "8.0",
+
+                "",
+                "Phạm Thanh Trúc Linh",
+                "Mình rất thích món ăn ở đây, vừa ngon lại còn rẻ nữa.",
+                "8.5");
+
         for (int i = 0; i < 100; i++) {
-            stringList.add("Amore Coffee & Fresh Bread");
+            modelWhereList.add(modelWhere);
         }
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getActivity());
 
-        apdapterWhere = new ApdapterWhere(getActivity(), stringList);
+        apdapterWhere = new ApdapterWhere(getActivity(), modelWhereList);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(apdapterWhere);
         apdapterWhere.notifyDataSetChanged();
