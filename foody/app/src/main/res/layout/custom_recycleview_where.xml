@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="-1.5dp"
+        android:layout_marginRight="-1.5dp"
+        app:cardCornerRadius="0dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/textViewRate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="7.8"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/bg_custom_recycleview_where_textview_rate"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/textViewWhereTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:text="Amore Coffee - Fresh Bread"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewWhereAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewWhereTitle"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="5dp"
+                android:text="10B Kỳ Đồng,P.9, Quận 3, TP. HCM"
+                android:textColor="@color/text_color"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/textViewWhereAddressKm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewWhereTitle"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="5dp"
+                android:text="13305.9km"
+                android:textColor="@color/text_color"
+                android:gravity="end"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:id="@+id/imageViewWhere"
+                android:layout_below="@id/textViewRate"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food" />
+            <Button
+                android:id="@+id/buttonOrder"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/imageViewWhere"
+                android:text="Đặt giao hàng"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_custom_recycleview_where_button_order"
+                android:layout_margin="2dp"/>
+
+
+            <ImageView
+                android:id="@+id/imageViewIconUser1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/buttonOrder"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/user"
+                android:background="@drawable/bg_custom_recycleview_where_imageview_user"/>
+
+            <TextView
+                android:id="@+id/textViewUser1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonOrder"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="7dp"
+
+                android:text="Nguyen Hoang Chuong"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textViewUserRate1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/buttonOrder"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="7dp"
+
+                android:text="8.0"
+                android:textColor="@color/rate"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:paddingEnd="5dp"/>
+
+            <TextView
+                android:id="@+id/textViewComment1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewUser1"
+                android:layout_marginLeft="40dp"
+                android:text="Mình rất thích món ăn ở đây, vừa ngon lại còn rẻ nữa."
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageViewIconUser2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/textViewComment1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/user"
+
+                android:background="@drawable/bg_custom_recycleview_where_imageview_user"/>
+
+            <TextView
+                android:id="@+id/textViewUser2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewComment1"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="7dp"
+
+                android:text="Nguyen Hoang Chuong"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/textViewUserRate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewComment1"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="7dp"
+
+                android:text="8.0"
+                android:textColor="@color/rate"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:paddingEnd="5dp"/>
+
+            <TextView
+                android:id="@+id/textViewComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewUserRate2"
+                android:layout_marginLeft="40dp"
+                android:text="Mình rất thích món ăn ở đây, vừa ngon lại còn rẻ nữa."
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

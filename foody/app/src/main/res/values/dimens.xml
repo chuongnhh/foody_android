@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="toolbar_size">45dp</dimen>
+    <dimen name="tab_layout_size">26dp</dimen>
+    <dimen name="tab_padding_text">8dp</dimen>
+    <dimen name="tab_stroke_width">1dp</dimen>
+    <dimen name="tab_corner_size">3dp</dimen>
+    <dimen name="header_size">35dp</dimen>
+    <dimen name="text_size_tab_header">13sp</dimen>
+
+
+    <dimen name="text_padding_top_tab_header">5dp</dimen>
+    <dimen name="text_padding_bottom_tab_header">1dp</dimen>
+
+    <dimen name="text_size_recycleview_title">11sp</dimen>
+    <dimen name="text_size_recycleview">10sp</dimen>
+</resources>

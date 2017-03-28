@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:cardCornerRadius="0dp"
+        android:layout_margin="1dp">
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp">
+
+            <ImageView
+                android:id="@+id/imageViewWhatEat"
+                android:layout_width="250dp"
+                android:layout_height="160dp"
+                android:padding="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food"/>
+
+            <TextView
+                android:id="@+id/textViewWhatEatTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewWhatEat"
+                android:text="Xứ Quảng Quán - Đậm Chất Vị Quảng"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size_recycleview_title"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/textViewWhatEatShop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewWhatEatTitle"
+                android:text="Somtum Der - Món Ăn Thái"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="@dimen/text_size_recycleview_title"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/textViewWhatEatAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewWhatEatShop"
+                android:text="126 Pastuer, Quận 1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="@dimen/text_size_recycleview"
+                android:textColor="@color/text_color"/>
+
+            <View
+                android:id="@+id/recycleViewDivider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightGrey"
+                android:layout_below="@+id/textViewWhatEatAddress"/>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/recycleViewDivider"
+                android:layout_margin="5dp"
+                android:src="@drawable/user" />
+            <TextView
+                android:id="@+id/textViewUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycleViewDivider"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="35dp"
+                android:text="chuongnh"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_recycleview_title"/>
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewUser"
+                android:layout_marginLeft="35dp"
+                android:text="29/08/1994"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_size_recycleview"/>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

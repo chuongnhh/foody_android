@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">foody</string>
+    <string name="account">Tài khoản</string>
+    <string name="collection">Bộ sưu tập</string>
+    <string name="home">Trang chủ</string>
+    <string name="notification">Thông báo</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="where">Ở đâu</string>
+    <string name="whate_eat">Ăn gì</string>
+    <string name="latest">Mới nhất</string>
+    <string name="category">Danh mục</string>
+    <string name="city">TP. HCM</string>
+    <string name="version">Version 1.0</string>
+</resources>
