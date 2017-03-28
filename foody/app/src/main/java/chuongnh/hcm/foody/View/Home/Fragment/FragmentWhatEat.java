@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
+import chuongnh.hcm.foody.Model.ModelWhatEat;
 import chuongnh.hcm.foody.R;
 import chuongnh.hcm.foody.View.Home.Adapter.AdapterWhatEat;
 import chuongnh.hcm.foody.View.Home.Adapter.ApdapterWhere;
@@ -43,13 +44,21 @@ public class FragmentWhatEat extends Fragment {
         View view = inflater.inflate(R.layout.fragment_whateat, container, false);
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recycleViewWhatEat);
-        List<String> stringList = new ArrayList<>();
+        List<ModelWhatEat> modelWhatEatList = new ArrayList<>();
+
+        ModelWhatEat modelWhatEat = new ModelWhatEat(
+                "",
+                "Chả Bò Bánh Mì",
+                "Somtum Der - Món Ăn Thái",
+                "123 Pastuer, Quận 1", "", "chuongnh", "29/08/2017");
+
         for (int i = 0; i < 100; i++) {
-            stringList.add("Chả Bò Bánh Mì");
+            modelWhatEatList.add(modelWhatEat);
         }
+
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getActivity(), 2);
 
-        adapterWhatEat = new AdapterWhatEat(getActivity(), stringList);
+        adapterWhatEat = new AdapterWhatEat(getActivity(), modelWhatEatList);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapterWhatEat);
         adapterWhatEat.notifyDataSetChanged();
