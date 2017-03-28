@@ -5,7 +5,7 @@
     <dimen name="tab_padding_text">8dp</dimen>
     <dimen name="tab_stroke_width">1dp</dimen>
     <dimen name="tab_corner_size">3dp</dimen>
-    <dimen name="header_size">35dp</dimen>
+    <dimen name="header_size">36dp</dimen>
     <dimen name="text_size_tab_header">13sp</dimen>
 
 

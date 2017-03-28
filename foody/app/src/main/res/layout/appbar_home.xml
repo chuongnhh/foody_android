@@ -16,9 +16,14 @@
             android:layout_width="match_parent"
             android:layout_height="@dimen/toolbar_size"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:logo="@drawable/logo"
             app:titleTextColor="@color/white"
             app:titleTextAppearance="@style/Toolbar.TitleText">
+
+            <ImageView
+                android:id="@+id/imageViewLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/logo" />
 
             <TextView
                 android:id="@+id/textViewWhere"

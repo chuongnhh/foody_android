@@ -1,6 +1,7 @@
 package chuongnh.hcm.foody.View.Home;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import chuongnh.hcm.foody.R;
+import chuongnh.hcm.foody.View.Category.CategoryActivity;
 import chuongnh.hcm.foody.View.Home.Adapter.ViewPagerAdapter;
 import chuongnh.hcm.foody.View.Home.Fragment.FragmentWhatEat;
 import chuongnh.hcm.foody.View.Home.Fragment.FragmentWhere;
@@ -39,12 +41,20 @@ public class HomeActivity extends AppCompatActivity {
 
         toolbar.setTitle(null);
 
+        toolbar.findViewById(R.id.imageViewLogo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, CategoryActivity.class);
+                startActivity(intent);
+            }
+        });
+
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 switch (item.getItemId()) {
                     case R.id.menu_home_plus:
-                        Toast.makeText(getApplication(), "menu home plus click", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplication(), "You was click on plus button", Toast.LENGTH_SHORT).show();
                         break;
                 }
                 return false;

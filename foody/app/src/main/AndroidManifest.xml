@@ -25,7 +25,8 @@
         <activity android:name=".View.Collection.CollectionActivity" />
         <activity android:name=".View.Account.AccountActivity" />
         <activity android:name=".View.Search.SearchActivity" />
-        <activity android:name=".View.Notification.NotificationActivity"></activity>
+        <activity android:name=".View.Notification.NotificationActivity" />
+        <activity android:name=".View.Category.CategoryActivity"></activity>
     </application>
 
 </manifest>
