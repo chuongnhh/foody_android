@@ -3,7 +3,6 @@ package chuongnh.hcm.foody.View.Home.Fragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,10 +14,9 @@ import java.util.List;
 import chuongnh.hcm.foody.Model.ModelWhatEat;
 import chuongnh.hcm.foody.R;
 import chuongnh.hcm.foody.View.Home.Adapter.AdapterWhatEat;
-import chuongnh.hcm.foody.View.Home.Adapter.ApdapterWhere;
 
 /**
- * Created by Nguyen Hoang Chuong on 3/27/2017.
+ * Created by Nguyen Hoang Chuong on 3/29/2017.
  */
 
 public class FragmentWhatEat extends Fragment {
@@ -41,6 +39,7 @@ public class FragmentWhatEat extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
         View view = inflater.inflate(R.layout.fragment_whateat, container, false);
 
         recyclerView = (RecyclerView) view.findViewById(R.id.recycleViewWhatEat);

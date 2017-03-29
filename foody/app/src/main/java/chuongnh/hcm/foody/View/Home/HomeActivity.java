@@ -16,8 +16,8 @@ import android.widget.Toast;
 import chuongnh.hcm.foody.R;
 import chuongnh.hcm.foody.View.Category.CategoryActivity;
 import chuongnh.hcm.foody.View.Home.Adapter.ViewPagerAdapter;
-import chuongnh.hcm.foody.View.Home.Fragment.FragmentWhatEat;
 import chuongnh.hcm.foody.View.Home.Fragment.FragmentWhere;
+import chuongnh.hcm.foody.View.Home.Fragment.FragmentWhatEat;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -30,6 +30,7 @@ public class HomeActivity extends AppCompatActivity {
     private ViewPagerAdapter viewPagerAdapter;
 
     private Toolbar toolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
