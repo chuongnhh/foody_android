@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="chuongnh.hcm.foody.View.Category.CategoryActivity">
 
-    <include layout="@layout/appbar_category" />
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/menu_category_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/category"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:textAppearance="@style/Toolbar.TitleText" />
+    </LinearLayout>
+
+</LinearLayout>

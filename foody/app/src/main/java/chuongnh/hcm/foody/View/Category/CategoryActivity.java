@@ -7,38 +7,27 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 
 import chuongnh.hcm.foody.R;
 
 public class CategoryActivity extends AppCompatActivity {
 
-    private Toolbar toolbar;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
 
-        toolbar = (Toolbar) findViewById(R.id.toolbar_category);
-        setSupportActionBar(toolbar);
-        toolbar.setTitle(null);
-
-        toolbar.findViewById(R.id.menu_category_back).setOnClickListener(new View.OnClickListener() {
+        imageView = (ImageView) findViewById(R.id.menu_category_back);
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
+
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_category, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        return super.onOptionsItemSelected(item);
-    }
 }
